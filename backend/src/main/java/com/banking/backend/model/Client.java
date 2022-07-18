@@ -1,5 +1,9 @@
 package com.banking.backend.model;
 
-//Comentário feito no github
+import java.util.UUID;
+
 public class Client {
+    UUID id;
+    String name;
+    String email;
 }
