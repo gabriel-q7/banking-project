@@ -3,11 +3,13 @@ package com.banking.backend.controller;
 import com.banking.backend.exception.ClientNotFoundException;
 import com.banking.backend.model.Client;
 import com.banking.backend.repository.ClientRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@Slf4j
 @RestController
 @RequestMapping("/clients")
 public class ClientController {
@@ -21,6 +23,7 @@ public class ClientController {
     //GET all
     @GetMapping
     public List<Client> findAll(){
+        log.info("Chamou o endpoint");
         return null;
     }
 
